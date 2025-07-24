@@ -54,10 +54,16 @@ public class Main {
             System.out.println(""); // saltos de linea
         }
     }
-
+    public static void Rombo(int n){
+        // n es la altura de la pirámide = 5
+        Piramide(n);
+        // imprime la parte inferior del rombo
+        PiramideI(n);
+    }
     public static void main(String[] args) {
         int n = 5; // altura para la piramide
-        Piramide(n);
+        Rombo(n);
         System.out.println("Piramide de altura: " + n + " creada.");
+        System.out.println("Rombo de altura: " + n + " creado.");
     }
 }
